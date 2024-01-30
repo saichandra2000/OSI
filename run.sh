@@ -15,13 +15,13 @@ if [[ $confirm =~ ^[Yy]$ ]]; then
     mac_address="0E:23:AA:EF:EA"
 
     # Run Server.py with default values
-    python3 Server.py "$message" "$ip_address" "$mac_address" &
+    python3 Server3.py "$message" "$ip_address" "$mac_address" &
 
     
 
 
     # Run Client.py with default values
-    python3 Client.py "$ip_address" "$mac_address"
+    python3 Client3.py "$ip_address" "$mac_address"
 
     # Exit script
     echo "Script execution complete."
